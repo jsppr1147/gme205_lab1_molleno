@@ -12,6 +12,9 @@ To further increase familiarity, a script was encoded to practice pushing and pu
 #Data Inspection Script:  
 This exercise was performed to understand the basic structure, quality and limits of a dataset before further computations.  
 
-## Added Features
+## Current Features
 - Imports Pandas, Matplotlib, JSON, and OS modules.
-- Loads spatial point data from `data/pts.csv`.
+- Loads spatial point data from `data/pts.csv`. 
+
+## Added Features
+1. Print basic dataset shape (row, columns) and column names  

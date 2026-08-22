@@ -17,3 +17,10 @@ except FileNotFoundError:
     print(f"Error: Cannot find file at '{DATA_PATH}'.") 
     print("Make sure you have: data/points.csv") 
     raise 
+
+print("=== DATA INSPECTION REPORT ===")
+num_rows, num_cols = df.shape
+print("\nBasic Information\n-----------------")
+print(f"Number of rows: {num_rows}")
+print(f"Number of columns: {num_cols}")
+print(f"Column names: {list(df.columns)}")
