@@ -18,5 +18,7 @@ This exercise was performed to understand the basic structure, quality and limit
 - Print basic dataset shape (row, columns) and column names   
 - Validation of required lat and lon columns.  
 - Check for invalid coordinate ranges (lon: -180,180 and lat -90,90)  
+- Added bounding box for maximizing the display of the points  
+
 ## Added Features
-1. Added bounding box for maximizing the display of the points
+1. Generates output files: a.) summary JSON for quality metrics and bounding box data and b.) a scatter plot preview of coordinates
