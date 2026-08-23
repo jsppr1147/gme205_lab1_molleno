@@ -15,6 +15,7 @@ This exercise was performed to understand the basic structure, quality and limit
 ## Current Features
 - Imports Pandas, Matplotlib, JSON, and OS modules.
 - Loads spatial point data from `data/pts.csv`. 
-
+- Print basic dataset shape (row, columns) and column names  
 ## Added Features
-1. Print basic dataset shape (row, columns) and column names  
+1. Validation of required lat and lon columns.
+2. Check for invalid coordinate ranges (lon: -180,180 and lat -90,90)
