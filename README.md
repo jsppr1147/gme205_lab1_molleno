@@ -10,12 +10,13 @@ To further increase familiarity, a script was encoded to practice pushing and pu
 -----------------------------------------------------------------  
 
 #Data Inspection Script:  
-This exercise was performed to understand the basic structure, quality and limits of a dataset before further computations.  
+This exercise was performed to understand the basic structure, quality and limits of a dataset before further computations.   
 
-## Current Features
-- Imports Pandas, Matplotlib, JSON, and OS modules.
-- Loads spatial point data from `data/pts.csv`. 
-- Print basic dataset shape (row, columns) and column names  
+## Current Features  
+- Imports Pandas, Matplotlib, JSON, and OS modules. 
+- Loads spatial point data from `data/pts.csv`.  
+- Print basic dataset shape (row, columns) and column names   
+- Validation of required lat and lon columns.  
+- Check for invalid coordinate ranges (lon: -180,180 and lat -90,90)  
 ## Added Features
-1. Validation of required lat and lon columns.
-2. Check for invalid coordinate ranges (lon: -180,180 and lat -90,90)
+1. Added bounding box for maximizing the display of the points
