@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # -----------------------------
 # Paths
 # -----------------------------
-DATA_PATH = "data/points.csv"
+DATA_PATH = "data/pts.csv"
 OUTPUT_DIR = "output"
 SUMMARY_PATH = os.path.join(OUTPUT_DIR, "summary.json")
 PLOT_PATH = os.path.join(OUTPUT_DIR, "preview.png")
