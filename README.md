@@ -22,3 +22,7 @@ This exercise was performed to understand the basic structure, quality and limit
 
 ## Added Features
 1. Generates output files: a.) summary JSON for quality metrics and bounding box data and b.) a scatter plot preview of coordinates
+
+## Reflection
+
+This pipeline inspects row counts, null values, and basic spatial boundaries to ensure spatial datasets are structural before further processing. It assumes that the CSV contains valid numeric `lon` and `lat` values framed within standard WGS84 geographic boundaries (-180 to 180 longitude, -90 to 90 latitude). Also, it automatically checks for missing columns, nulls, and out-of-bound coordinates to prevent pipeline crashes down the line, but a human must still verify if points physically make sense. Finally, if the dataset scales to millions of rows, reading the entire CSV into memory with Pandas will cause high RAM usage, and plotting every point with Matplotlib will cause massive rendering slowdowns. Scaling up would require bulk processing tools alongside spatial indexing or binning for visualization.
